@@ -7,7 +7,7 @@ C++ Game Programming practice using content from [Beginning C++ Game Programming
 
 Integrated Development Environment (IDE) for C++ (used by the book): 
     
-    - [Bloodshed Dev-C++](https://sourceforge.net/projects/orwelldevcpp/)
+ [Bloodshed Dev-C++](https://sourceforge.net/projects/orwelldevcpp/)
     
 ## Notes
 - **Page 13**: Understanding order of operations (BODMAS)
