@@ -5,9 +5,10 @@ C++ Game Programming practice using content from [Beginning C++ Game Programming
 
 ## Essentials
 
-Integrated Development Environment (IDE) for C++ (used by the book): 
+Integrated Development Environment (IDE) for C++ : 
     
- * [Bloodshed Dev-C++](https://sourceforge.net/projects/orwelldevcpp/)
+ * [Bloodshed Dev-C++](https://sourceforge.net/projects/orwelldevcpp/) *Used by the book*
+ * Visual Studio Enterprise 2017 32/64-bit (Multilanguage)
     
 ## Notes
 - **Page 13**: Understanding order of operations (BODMAS)
