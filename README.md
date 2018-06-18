@@ -6,6 +6,7 @@ C++ Game Programming practice using content from [Beginning C++ Game Programming
 ## Essentials
 
 Integrated Development Environment (IDE) for C++ (used by the book): 
+    
     - [Bloodshed Dev-C++](https://sourceforge.net/projects/orwelldevcpp/)
     
 ## Notes
