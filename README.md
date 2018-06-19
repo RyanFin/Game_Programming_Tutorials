@@ -18,6 +18,6 @@ Integrated Development Environment (IDE) for C++ :
     - **Range Modification:** An integer may be *signed* or *unsigned* whilst it is created (only works for int data type). A *signed* int is one which will accept both negtive and positive values, whereas its unsigned counterpart will only accept positive values.
 - **Page 20**: Defining new names for datatypes
     - **typedef** *unsigned short int* ushort;
-    keyword *typedef* is used to create a new datatype *ushort* which acts as an alias for the native type *unsigned short int* datatype. Allows developers to use alias to shorten the names of these datatypes.
+        - keyword *typedef* is used to create a new datatype *ushort* which acts as an alias for the native type *unsigned short int* datatype. Allows developers to use alias to shorten the names of these datatypes.
         
 ## TroubleShooting
