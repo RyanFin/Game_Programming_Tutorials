@@ -31,5 +31,11 @@ Integrated Development Environment (IDE) for C++ :
 - **Page 24**
     - When an integer exceeds it maximum value it will *wrap around* to the lowest value.
     - When an integer is decreased below its minimum value it will *wrap around* to its highest value.
+- **Page 27**: Enumerations
+    - enum difficulty { NOVICE, EASY, NORMAL, HARD, UNBEATABLE};
+        - Starting from the value on the left {0,1,2,3,4}
+        -Initialise a variable using the following syntax: difficulty *myvar* = NOVICE; (or any other enum variable from the list)
+    - enum ship{FIGHTER = 25, BOMBER, CRUISER = 50, DESTROYER = 100};
+        - Value of *BOMBER* is 26 as it is equivalent to the pervious value (FIGHTER which is 25) plus 1 = 26.
         
 ## TroubleShooting
