@@ -1,0 +1,49 @@
+// Lost Fortune 
+// A personalised adventure
+
+#include <iostream>
+#include <string>
+
+using std::cout;
+using std::cin;
+using std::endl;
+using std::string;
+
+int main(){
+	
+	cout << "Welcome to Lost Fortune!" << endl;
+
+	cout << "Please enter the following for your personalised adventure: " << endl;
+	cout << "Enter a number: " << endl;
+
+	int a;
+	cin >> a;
+
+	cout << "Enter a number larger than the first: " << endl;
+	int b;
+	cin >> b;
+	
+	if(a < b){
+		string name;
+		cout << "Enter your last name: " << endl;
+		cin >> name;
+		
+	cout << "a large group of " << a << "set out on a quest -- in search of the lost treasure of Ancient Dwarves." << 
+	"The group was led by a legendary rouge, who comes by the name of " << name << endl;
+	cout << "\nAlong the way, a band of maurauding ogres attack the party. All fought valiantly under the command of " << 
+	name << " and the ogres were swiftly defeated, but a cost of " << b << " lives who perished in the battle. Leaving just " << 
+	(a - b) << " remaining in the group." <<endl;
+	
+	cout << "\nThe party was about to give up all hope. But whilst leaving the deceased to rest, they stumbled upon the buried fortune" <<
+	"So the adventurers split 900 gold pieces." << name << " held on to the extra four pieces to keep things fair of course." << endl;
+	} else{
+		cout << "Entered number too small..." << endl;
+	}
+	
+
+	
+
+	
+	system("pause");
+	return 0;
+}
