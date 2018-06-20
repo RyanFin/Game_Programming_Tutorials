@@ -37,5 +37,7 @@ Integrated Development Environment (IDE) for C++ :
         -Initialise a variable using the following syntax: difficulty *myvar* = NOVICE; (or any other enum variable from the list).
     - enum ship{FIGHTER = 25, BOMBER, CRUISER = 50, DESTROYER = 100};
         - Value of *BOMBER* is *26* as it is equivalent to the previous value (FIGHTER which is 25) plus 1 = 26.
+- **Page 29**
+    - The use of *cin* to get user input only works with *strings* that have no whitespace in them (e.g. tabs and spaces). Use of streams can be used to compensate for this. **Be cautious of the limitations of strings in c++**.
         
 ## TroubleShooting
