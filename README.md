@@ -41,5 +41,7 @@ Integrated Development Environment (IDE) for C++ :
     - The use of *cin* to get user input only works with *strings* that have no whitespace in them (e.g. tabs and spaces). Use of streams can be used to compensate for this. **Be cautious of the limitations of strings in c++**.
 - **Page 39**: If-Statements
     - Non-zero values (including negative values) equate to *true* in an if-statement, therefore, code will be executed within the code block. *0*, on the other hand, equates to *false* in an if-statement, and therefore the compiler will skip and avoid executing the code.
+- **Page 44**: Switch Statements
+    - Strings **do not** work with switch statements in C++. Integers, chars and enumerators do however.
         
 ## TroubleShooting
