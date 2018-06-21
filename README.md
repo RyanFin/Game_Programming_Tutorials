@@ -45,7 +45,7 @@ Integrated Development Environment (IDE) for C++ :
     - Strings **do not** work with switch statements in C++. Integers, chars and enumerators do however.
 - **Page 48**: Do-while Loops
     - Guarantees that the loop body (within the *do* body) is executed *at least* once.
-- **Page 50**: *Continue* Reserved / Keyword
+- **Page 52**: *Continue* Reserved / Keyword
     - Use the C++ reserved word *continue* to skip the value of an incrementing variable in a while loop.
         
 ## TroubleShooting
