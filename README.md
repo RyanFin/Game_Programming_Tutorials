@@ -50,6 +50,6 @@ Integrated Development Environment (IDE) for C++ :
 - **Page 57**: Understand the Order of Operations
     - In C++, logical NOT (!) has a higher level of precedence than logical AND (&&), which has a higher level of precedence than logical OR (||).
 - **Page 60**: Random Number Generation
-    - *#include <cstdlib>* for the use of the rand() method
+    - *cstdlib* library for the use of the rand() method
         
 ## TroubleShooting
