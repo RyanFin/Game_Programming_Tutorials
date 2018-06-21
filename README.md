@@ -43,5 +43,7 @@ Integrated Development Environment (IDE) for C++ :
     - Non-zero values (including negative values) equate to *true* in an if-statement, therefore, code will be executed within the code block. *0*, on the other hand, equates to *false* in an if-statement, and therefore the compiler will skip and avoid executing the code.
 - **Page 44**: Switch Statements
     - Strings **do not** work with switch statements in C++. Integers, chars and enumerators do however.
+- **Page 48**: Do-while Loops
+    - Guarantees that the loop body (within the *do* body) is executed *at least* once.
         
 ## TroubleShooting
