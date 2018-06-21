@@ -47,5 +47,7 @@ Integrated Development Environment (IDE) for C++ :
     - Guarantees that the loop body (within the *do* body) is executed *at least* once.
 - **Page 52**: *Continue* Reserved / Keyword
     - Use the C++ reserved word *continue* to skip the value of an incrementing variable in a while loop, as the program goes straight to the top of the loop (therefore, the statement *cout << count << endl;* will never run).
+- **Page 57**: Understand the Order of Operations
+    - In C++, logical NOT (!) has a higher level of precedence than logical AND (&&), which has a higher level of precedence than logical OR (||).
         
 ## TroubleShooting
