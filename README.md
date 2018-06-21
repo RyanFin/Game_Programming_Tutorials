@@ -46,6 +46,6 @@ Integrated Development Environment (IDE) for C++ :
 - **Page 48**: Do-while Loops
     - Guarantees that the loop body (within the *do* body) is executed *at least* once.
 - **Page 52**: *Continue* Reserved / Keyword
-    - Use the C++ reserved word *continue* to skip the value of an incrementing variable in a while loop.
+    - Use the C++ reserved word *continue* to skip the value of an incrementing variable in a while loop, as the program goes straight to the top of the loop (therefore, the statement *cout << count << endl;* will never run).
         
 ## TroubleShooting

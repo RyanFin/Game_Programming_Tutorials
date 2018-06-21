@@ -19,7 +19,7 @@ int main(){
 			break;
 		}
 		
-		// skip the number 5 
+		// skip the number 5, as program goes straight back to the top of the loop
 		if (count == 5){
 			continue;
 		}
