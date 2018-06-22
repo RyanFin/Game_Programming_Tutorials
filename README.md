@@ -50,6 +50,9 @@ Integrated Development Environment (IDE) for C++ :
 - **Page 57**: Understand the Order of Operations
     - In C++, logical NOT (!) has a higher level of precedence than logical AND (&&), which has a higher level of precedence than logical OR (||).
 - **Page 60**: Random Number Generation
-    - *cstdlib* library for the use of the rand() method
+    - *cstdlib* library for the use of the rand() method.
+    - *rand()* function will generate a random number, however it will start from the beginning of a large book of predetermined random numbers. *Seed* the random number generator with the following piece of code: *srand(time (0))*. The function uses the current time to generate a unique number that is used to change the starting position of the random number generator *every time* the program commences.
+- **Page 61**: Random Number Range 
+    - Generate a range of random numbers by using the modulus operator (%).
         
 ## TroubleShooting
