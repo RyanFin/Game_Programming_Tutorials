@@ -64,9 +64,9 @@ Integrated Development Environment (IDE) for C++ :
     - Inner-most for loop will be executed in full for each iteration of the outer loop.
 - **Page 79**: String object initialisation
     - Strings can be instantiated in three different ways:
-        1) string word1 = "Game";
-        2) string word2("Over");
-        3) string word3(3, '!'); (*Equivalent to "!!!"*)
+        1) **string word1 = "Game";**
+        2) **string word2("Over");**
+        3) **string word3(3, '!');**(*Equivalent to "!!!"*)
         
         
 ## TroubleShooting
