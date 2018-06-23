@@ -60,5 +60,7 @@ Integrated Development Environment (IDE) for C++ :
     - Generate a range of random numbers by using the modulus operator (%).
     
 ### Chapter 3 - For Loops, Strings, and Arrays: Word Jumble
+- *Page 75*: Nesting for-loops
+    - Inner-most for loop will be executed in full for each iteration of the outer loop.
         
 ## TroubleShooting
