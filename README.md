@@ -66,7 +66,7 @@ Integrated Development Environment (IDE) for C++ :
     - Strings can be instantiated in three different ways:
         1) string word1 = "Game";
         2) string word2("Over");
-        3) string word3(3, '!'); *Equivalent to "!!!"*
+        3) string word3(3, '!'); (*Equivalent to "!!!"*)
         
         
 ## TroubleShooting
