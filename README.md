@@ -67,6 +67,8 @@ Integrated Development Environment (IDE) for C++ :
         1) **string word1 = "Game";**
         2) **string word2("Over");**
         3) **string word3(3, '!');** (*Equivalent to "!!!"*)
+- **Page 87**: C-Style Strings
+    - C-style strings (cstrings) are character arrays that terminate with a *null character*. Unlike strings, c-style strings have a *fixed* length. In C++, cstrings work seamlessly with strings.
         
         
 ## TroubleShooting
