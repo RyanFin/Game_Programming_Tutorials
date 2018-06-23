@@ -35,9 +35,5 @@ int main(){
 	
 	cout << "\n'X' wins.\n\n";
 	
-	
-	
-	
-	
 	return 0;
 }
