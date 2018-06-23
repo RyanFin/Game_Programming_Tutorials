@@ -69,6 +69,9 @@ Integrated Development Environment (IDE) for C++ :
         3) **string word3(3, '!');** (*Equivalent to "!!!"*)
 - **Page 87**: C-Style Strings
     - C-style strings (cstrings) are character arrays that terminate with a *null character*. Unlike strings, c-style strings have a *fixed* length. In C++, cstrings work seamlessly with strings.
+- **Page 92**: Enumerator trick
+    - *Enumeration lists* can be used as a convenient way to store the number of elements. can be used in several situations, such as defining the amount of difficulty levels within a game.
+    - Example: enum *difficulty* = {EASY, MEDIUM, HARD, **NUM_DIFF_LEVELS**}. NUM_DIFF_LEVELS = *3* which is equivalent to the amount of game difficulty levels. 
         
         
 ## TroubleShooting
