@@ -62,6 +62,9 @@ Integrated Development Environment (IDE) for C++ :
 ### Chapter 3 - For Loops, Strings, and Arrays: Word Jumble
 - **Page 75**: Nesting for-loops
     - Inner-most for loop will be executed in full for each iteration of the outer loop.
+- **Page 76**: Object Properties.
+    - *Data Members* are the object *instance variables*.
+    - *Member Functions* are the object *operations*.
 - **Page 79**: String object initialisation
     - Strings can be instantiated in three different ways:
         1) **string word1 = "Game";**
