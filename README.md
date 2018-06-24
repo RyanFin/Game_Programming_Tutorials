@@ -90,7 +90,9 @@ Integrated Development Environment (IDE) for C++ :
     - An *iterator* is a value that identifies a particular element within a container (such as a vector list). They are not elements but are used to refer to them.
     - Analogous to a post-it note that can stick to an element within a container.
     - Once assigned to an element within a container, the iterator can be used to access or modify them.
-    - A *const_iterator*, unlike an *iterator*, cannot modify the element to which it refers. The const_iterator has read-only access unlike its *iterator* counterpart, therefore it is much more limited, but safer to use when navigating around a vector  .
+    - A *const_iterator*, unlike an *iterator*, cannot modify the element to which it refers. The const_iterator has read-only access unlike its *iterator* counterpart, therefore it is much more limited, but safer to use when navigating around a vector.
+- **Page 109**: *iterator/const_iterator end()* member function
+    - The end() member function returns an iterator than is *one past* the last element of the vector.
     
         
         
