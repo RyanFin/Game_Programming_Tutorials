@@ -1,4 +1,4 @@
-// Hero Inventory Program
+// Hero Inventory Program 2
 
 #include <iostream>
 #include <string>
