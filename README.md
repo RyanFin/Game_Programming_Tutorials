@@ -77,6 +77,8 @@ Integrated Development Environment (IDE) for C++ :
     - Example: enum *difficulty* = {EASY, MEDIUM, HARD, **NUM_DIFF_LEVELS**}. NUM_DIFF_LEVELS = *3* which is equivalent to the amount of game difficulty levels. 
 
 ### Chapter 4 - The Standard Template Library: Hangman
+ - **Page 100**: Vectors
+    - Dynamic arrays (similar to ArrayLists in Java). An array that can grow or shrink as required.
         
         
 ## TroubleShooting
