@@ -13,6 +13,8 @@ Integrated Development Environment (IDE) for C++ :
 ## Notes
 
 ### Chapter 1 - Types, Variables, and Standard I/O: Lost Fortune
+- **Page 9**: Employing using a Directive
+    - **using namespace std** is used so that the *std::* prefix is not required when calling operations such as *cout* and *cin*.
 - **Page 13**: Understanding order of operations (BODMAS)
 - **Page 15**: Understanding Type Modifiers
     - *short* and *long* can be assigned when creating primitive data types. Short will reduce the amount of storage space required for a variable, whereas using *long* will increase the amount of storage space required for the variable. 
