@@ -37,6 +37,10 @@ int main(){
 	// Display the number of characters in the first item of the hero's inventory
 	cout << "The item name '" << *myIterator << "' has ";
 	cout << (*myIterator).size() << " letters in it.\n"; 
+	
+	// Alternative syntax
+	cout << "The item name'" << *myIterator << "' has ";
+	cout << myIterator->size() << " letters in it.\n";
     
     return 0;
 }
