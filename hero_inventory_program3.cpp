@@ -30,7 +30,6 @@ int main(){
 	*myIterator = "Battle Axe"; //Change to battle axe whilst myIterator references the first element in the container
 	
 	cout << "Your Items: " << endl;
-	
 	for(iter = inventory.begin(); iter != inventory.end(); ++iter){
 		cout << *iter << endl;
 	}
@@ -42,6 +41,24 @@ int main(){
 	// Alternative syntax
 	cout << "The item name'" << *myIterator << "' has ";
 	cout << myIterator->size() << " letters in it.\n";
+	
+	cout << "\nYou recover a crossbow from a slain enemy.\n";
+	// Inserting strings into a vector
+	inventory.insert(inventory.begin(), "Crossbow"); // Insert a crossbow at the beginning of the vector list
+	
+	// View Items
+	cout << "\nYour Items: \n";
+	for(iter = inventory.begin(); iter != inventory.end(); ++iter){
+		cout << *iter << endl;
+	}
+	
+	cout << "\nYour armour is destroyed in a fierce battle.\n";
+	// Erase item from middle of vector
+	inventory.erase((inventory.begin() + 2));
+	
+	for(iter = inventory.begin(); iter != inventory.end(); ++iter){
+		cout << *iter << endl;
+	}
     
     return 0;
 }

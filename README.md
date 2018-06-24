@@ -9,6 +9,8 @@ Integrated Development Environment (IDE) for C++ :
     
  * [Bloodshed Dev-C++](https://sourceforge.net/projects/orwelldevcpp/) (*Used by the book*)
  * Visual Studio Enterprise 2017 32/64-bit (Multilanguage)
+ * [gamedev.net](https://www.gamedev.net/)
+ * [programgames.com](http://programgames.com/)
     
 ## Notes
 
