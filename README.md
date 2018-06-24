@@ -96,7 +96,7 @@ Integrated Development Environment (IDE) for C++ :
 - **Page 109**: *iterator/const_iterator end()* member function
     - The end() member function returns an iterator than is *one past* the last element of the vector.
     - Dereference Operator (*) is used to display the value that the iterator currently refers to (and not the iterator itself).
-- **Page 110*: Changing the value of a vector element
+- **Page 110**: Changing the value of a vector element
     - A vector element can be changed using an iterator (not a const_iterator) with the following syntax: **myIterator = "my_string";* this will modify the value of the element the iterator currently refers to.
     - **Accessing member functions of elements using an iterator**:
         - Dereference the iterator and surround with parenthesis as such: *(*myIterator).size()*. This will call size() member function belonging to the string object that the iterator currently refers to.
