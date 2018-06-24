@@ -72,6 +72,8 @@ Integrated Development Environment (IDE) for C++ :
 - **Page 92**: Enumerator trick
     - *Enumeration lists* can be used as a convenient way to store the number of elements. can be used in several situations, such as defining the amount of difficulty levels within a game.
     - Example: enum *difficulty* = {EASY, MEDIUM, HARD, **NUM_DIFF_LEVELS**}. NUM_DIFF_LEVELS = *3* which is equivalent to the amount of game difficulty levels. 
+
+### Chapter 4 - The Standard Template Library: Hangman
         
         
 ## TroubleShooting
