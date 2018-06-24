@@ -16,6 +16,7 @@ int main(){
 	vector<string>::iterator myIterator;
 	// Create constant iterator of the type vector<string>
 	vector<string>::const_iterator iter; // can NOT modify the value of the element it is tagged to within the container
+										// read-only status. Good for viewing elements within the vector
 	
 	cout << "Your Items: \n";
 	for (iter = inventory.begin(); iter != inventory.end(); ++iter){
