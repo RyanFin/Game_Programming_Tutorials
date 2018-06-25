@@ -110,6 +110,9 @@ Integrated Development Environment (IDE) for C++ :
     - *size()* vector member function is used to check how many elements are currently occupying the vector list.
     - If the amount of elements currently within the vector exceeds the capacity, the capacity is doubled automatically as the program reallocates memory.
     - *reserve()* member function is used to increase the capacity to a container with a set value.
+- **Page 118**: *Sequential* versus *Associative* containers
+    - Sequential containers allow you to retrieve values in a *sequence*, whereas associative containers allow you to retrieve values using *keys*.
+    - A vector is an example of a sequential container.
     
            
 ## TroubleShooting
