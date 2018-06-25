@@ -101,7 +101,15 @@ Integrated Development Environment (IDE) for C++ :
     - **Accessing member functions of elements using an iterator**:
         - Dereference the iterator and surround with parenthesis as such: *(*myIterator).size()*. This will call size() member function belonging to the string object that the iterator currently refers to.
         - Alternative syntax for *(*myIterator).size()* is *myIterator->size()*. Both get the amount of characters from the string object, however, the latter is prettier.
+- **Page 112**: Standard Template Library (STL) Algorithms
+    - STL Algorithms can be used to randomize, sort and merge highscore vectors.
+- **Page 114**: Random Shuffle
+    - *random_shuffle(starting_index, ending_index);*: A useful method for shuffling elements within a container.
+- **Page 117**: Reallocating memory within vecotr lists
+    - *capacity()* vector member function is used to check how many vector elements the vector list can store. 
+    - *size()* vector member function is used to check how many elements are currently occupying the vector list.
+    - If the amount of elements currently within the vector exceeds the capacity, the capacity is doubled automatically as the program reallocates memory.
+    - *reserve()* member function is used to increase the capacity to a container with a set value.
     
-        
-        
+           
 ## TroubleShooting
