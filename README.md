@@ -131,7 +131,7 @@ Integrated Development Environment (IDE) for C++ :
 - **Page 137**: Encapsulation
     - No variable created within a function can be accessed outside of the function. Details of the function is hidden as the details are *encapsulated* in a function. This heightens the effect of abstraction.
 - **Page 138**: Scopes
-    - Two main scope types in C++. *GLobal* and *Local*.
+    - Two main scope types in C++. *Global* and *Local*.
     - Everytime a double curly brace is used this defines a new scope for the program. Any variables created within thsi scope is not visible to code outside; therefore, the variable falls under a *local* scope. 
     - Functions and nested functions (using curly braces within a function defines another scope).
     
