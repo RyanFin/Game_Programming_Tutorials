@@ -117,6 +117,11 @@ Integrated Development Environment (IDE) for C++ :
     - A vector is an example of a sequential container.
 - **Page 119**: Planning your Programs
     - Using Pseudocode and Stepwise Refinement (Refining steps to make them more specific).
+- **Page 125**: *If I can use the subscripting operator, ([i]), with vectors why would I ever need to use iterators?*
+    - There are several reasons for using iterators over subscripting for values within a sequential container (such as a dynamic vector array):
+        1) Many of the vector member functions (operations) require iterators (such as insert() and erase()).
+        2) Standard Template Library (STL) algorithms require iterators.
+        3) You cannot use the subscripting operator with most of the STL containers, therefore you are going to have to use iterators sooner or later.
     
            
 ## TroubleShooting

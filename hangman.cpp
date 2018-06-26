@@ -39,10 +39,17 @@ int main(){
 		cout << "\n\nEnter your guess: " << endl;
 		cin >> guess;
 		guess = toupper(guess); //convert guess to UPPERCASE
-		while(guess != string::npos){ //while the guess is not equal to an empty string
-			
+		while(used.find(guess) != string::npos){ //while the guess is not equal to an empty string
+			cout << "\nYou've already guessed " << guess << endl;
+			cout << "Enter your guess: ";
+			cin >> guess;
+			guess = toupper(guess);
 			
 		}
+		
+		used += guess; // add guess to the 'used' string
+		
+	
 		
 		
 		
