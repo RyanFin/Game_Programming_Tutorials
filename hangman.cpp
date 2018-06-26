@@ -30,7 +30,7 @@ int main(){
 	
 	while((wrong < MAX_WRONG) && (soFar != THE_WORD)){
 		
-		cout << "\n\nYou have " << (MAX_WRONG - wrong) << "incorrect guesses left.\n";
+		cout << "\n\nYou have " << (MAX_WRONG - wrong) << " incorrect guesses left.\n";
 		cout << "\nYou've used the following letters:\n" << used << endl;
 		cout << "\nSo far, the word is:\n" << soFar << endl;
 		
