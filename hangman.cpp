@@ -71,6 +71,8 @@ int main(){
 		} else{
 			cout << "\nYou guessed it!";
 		}
+		
+		cout << "\nThe word was " << THE_WORD << endl;
 	
 
 	return 0; 

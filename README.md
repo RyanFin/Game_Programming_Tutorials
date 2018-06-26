@@ -122,6 +122,12 @@ Integrated Development Environment (IDE) for C++ :
         1) Many of the vector member functions (operations) require iterators (such as insert() and erase()).
         2) Standard Template Library (STL) algorithms require iterators.
         3) You cannot use the subscripting operator with most of the STL containers, therefore you are going to have to use iterators sooner or later.
+- **Page 131**: Declaring, Defining and Calling Functions
+    1) Declare functions by using *function prototyping*. This is *before* the main() method.
+        - Format: return_type| function_name | (parameters)
+    2) Define functions *before or after* the main method. Defining functions before calling them allows you to skip the declaration stage. Defining functions includes writing the code within the code body of curly braces.
+    3) Calling the function takes place *within* the main method. When calling methods parameters are filled with *arguments* that allow the function to run. This is a process commonly known as *abstraction*, as the entire function does not have to be written manually within main - without concern for the physical write-up of the method.
+    
     
            
 ## TroubleShooting
