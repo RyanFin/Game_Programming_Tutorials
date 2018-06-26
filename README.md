@@ -78,6 +78,8 @@ Integrated Development Environment (IDE) for C++ :
         1) **string word1 = "Game";**
         2) **string word2("Over");**
         3) **string word3(3, '!');** (*Equivalent to "!!!"*)
+- **Page 81**: Empty Strings
+    - *string::npos* is a special constant used as a condition for an empty string. 
 - **Page 87**: C-Style Strings
     - C-style strings (cstrings) are character arrays that terminate with a *null character*. Unlike strings, c-style strings have a *fixed* length. In C++, cstrings work seamlessly with strings.
 - **Page 92**: Enumerator trick
@@ -113,6 +115,8 @@ Integrated Development Environment (IDE) for C++ :
 - **Page 118**: *Sequential* versus *Associative* containers
     - Sequential containers allow you to retrieve values in a *sequence*, whereas associative containers allow you to retrieve values using *keys*.
     - A vector is an example of a sequential container.
+- **Page 119**: Planning your Programs
+    - Using Pseudocode and Stepwise Refinement (Refining steps to make them more specific).
     
            
 ## TroubleShooting
