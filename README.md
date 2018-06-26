@@ -122,6 +122,8 @@ Integrated Development Environment (IDE) for C++ :
         1) Many of the vector member functions (operations) require iterators (such as insert() and erase()).
         2) Standard Template Library (STL) algorithms require iterators.
         3) You cannot use the subscripting operator with most of the STL containers, therefore you are going to have to use iterators sooner or later.
+        
+### Chapter 5 - Functions: Mad Lib
 - **Page 131**: Declaring, Defining and Calling Functions
     1) Declare functions by using *function prototyping*. This is *before* the main() method.
         - **Format:** return_type| function_name | (parameters)
