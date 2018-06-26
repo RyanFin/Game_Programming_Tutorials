@@ -130,6 +130,10 @@ Integrated Development Environment (IDE) for C++ :
     3) Calling the function takes place *within* the main method. When calling methods parameters are filled with *arguments* that allow the function to run. This is a process commonly known as *abstraction*, as the entire function does not have to be written manually within main - without concern for the physical write-up of the method.
 - **Page 137**: Encapsulation
     - No variable created within a function can be accessed outside of the function. Details of the function is hidden as the details are *encapsulated* in a function. This heightens the effect of abstraction.
+- **Page 138**: Scopes
+    - Two main scope types in C++. *GLobal* and *Local*.
+    - Everytime a double curly brace is used this defines a new scope for the program. Any variables created within thsi scope is not visible to code outside; therefore, the variable falls under a *local* scope. 
+    - Functions and nested functions (using curly braces within a function defines another scope).
     
     
            
