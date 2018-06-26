@@ -125,6 +125,7 @@ Integrated Development Environment (IDE) for C++ :
 - **Page 131**: Declaring, Defining and Calling Functions
     1) Declare functions by using *function prototyping*. This is *before* the main() method.
         - Format: return_type| function_name | (parameters)
+        - You do not have to explicitly mention parameter names in the function declaration, however it is a best practise to do so to make the code clearer and easier to decipher.
     2) Define functions *before or after* the main method. Defining functions before calling them allows you to skip the declaration stage. Defining functions includes writing the code within the code body of curly braces.
     3) Calling the function takes place *within* the main method. When calling methods parameters are filled with *arguments* that allow the function to run. This is a process commonly known as *abstraction*, as the entire function does not have to be written manually within main - without concern for the physical write-up of the method.
     
