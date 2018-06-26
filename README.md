@@ -137,6 +137,4 @@ Integrated Development Environment (IDE) for C++ :
     - Everytime a double curly brace is used this defines a new scope for the program. Any variables created within thsi scope is not visible to code outside; therefore, the variable falls under a *local* scope. 
     - Functions and nested functions (using curly braces within a function defines another scope).
     
-    
-           
 ## TroubleShooting
