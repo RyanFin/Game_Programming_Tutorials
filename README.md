@@ -134,7 +134,11 @@ Integrated Development Environment (IDE) for C++ :
     - No variable created within a function can be accessed outside of the function. Details of the function is hidden as the details are *encapsulated* in a function. This heightens the effect of abstraction.
 - **Page 138**: Scopes
     - Two main scope types in C++. *Global* and *Local*.
-    - Everytime a double curly brace is used this defines a new scope for the program. Any variables created within thsi scope is not visible to code outside; therefore, the variable falls under a *local* scope. 
+    - Everytime a double curly brace is used this defines a new scope for the program. Any variables created within this scope is not visible to code outside; therefore, the variable falls under a *local* scope. 
     - Functions and nested functions (using curly braces within a function defines another scope).
+- **Page 147**: Default Arguments
+    - Default arguments are specified within *function prototypes*, e.g. (int asknumber(int high, int low = 1);).
+    - Once you specify a default value for a value in the function prototype, ALL remaining values must be assigned a value (e.g. void setDisplay(int height, int width, **int depth = 32**, **bool fullScreen = true**;)).
+    - When calling functions with default values. Once you omit a value you must omit the remaining default values from the function call.
     
 ## TroubleShooting
