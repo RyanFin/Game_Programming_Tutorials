@@ -143,5 +143,10 @@ Integrated Development Environment (IDE) for C++ :
 - **Page 150**: Overloading Functions
     - Create functions with two functions with the same names with different *parameter lists*.
     - If the *return type* is the only varying factor between two functions with identical names, this will throw an error.
+- **Page 152**: Function Inlining
+    - A code tweak technique used to boost performance of code.
+    - Makes a copy of a method when the function is called so that the profiler does not have to navigate to the function and run code outside of the main() method for consecutive calls.
+    - Very effective when running small one or two line code statements. Inlining with large code is ineffective, hindering the performance of the program, since the code is duplicated.
+    - The program will decide whether it is beneficial to use function inlining, or whether it is better to simply execute the code by navigating to the function itself. If the complier does not think that inlining will boost performance, it will not inline the function call.
     
 ## TroubleShooting
