@@ -140,5 +140,8 @@ Integrated Development Environment (IDE) for C++ :
     - Default arguments are specified within *function prototypes*, e.g. (int asknumber(int high, int low = 1);).
     - Once you specify a default value for a value in the function prototype, ALL remaining values must be assigned a value (e.g. void setDisplay(int height, int width, **int depth = 32**, **bool fullScreen = true**;)).
     - When calling functions with default values. Once you omit a value you must omit the remaining default values from the function call.
+- **Page 150**: Overloading Functions
+    - Create functions with two functions with the same names with different *parameter lists*.
+    - If the *return type* is the only varying factor between two functions with identical names, this will throw an error.
     
 ## TroubleShooting
