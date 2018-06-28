@@ -158,6 +158,8 @@ Integrated Development Environment (IDE) for C++ :
 - **Page 166-167**: *Passing by Value* Versus *Passing by Reference*
     - Passing by value is transient. It expires once the function ends and only persists within the scope of the function.
     - Passing by reference persists throughout the program. Continuing after a function returns back to the main method.
-    - Passing by value copies the variable, whereas passing by reference is efficient as copies are not made; access to the variable is granted. 
+    - Passing by value copies the variable, whereas passing by reference is efficient as copies are not made; access to the variable is granted.
+- **Page 173**: Returning a reference
+    - Never return a reference to a local variable from a function outside of main, as the variable does not exist outside the scope of the function (therefore it will not be reached by main()).
     
 ## TroubleShooting
