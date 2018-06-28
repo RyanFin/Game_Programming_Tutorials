@@ -155,5 +155,9 @@ Integrated Development Environment (IDE) for C++ :
     - Use '&' to create a reference that can be used for another variable.
         - Such as &mikesScore = myScore;
     - You can't assign a reference to another variable if it has already been assigned to one.
+- **Page 166-167**: *Passing by Value* Versus *Passing by Reference*
+    - Passing by value is transient. It expires once the function ends and only persists within the scope of the function.
+    - Passing by reference persists throughout the program. Continuing after a function returns back to the main method.
+    - Passing by value copies the variable, whereas passing by reference is efficient as copies are not made; access to the variable is granted. 
     
 ## TroubleShooting
