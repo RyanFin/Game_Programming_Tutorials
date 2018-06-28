@@ -149,4 +149,11 @@ Integrated Development Environment (IDE) for C++ :
     - Very effective when running small one or two line code statements. Inlining with large code is ineffective, hindering the performance of the program, since the code is duplicated.
     - The program will decide whether it is beneficial to use function inlining, or whether it is better to simply execute the code by navigating to the function itself. If the complier does not think that inlining will boost performance, it will not inline the function call.
     
+### Chapter 6 - Tic-Tac-Toe
+- **Page 162**: References
+    - A reference provides an alias for a variable. 
+    - Use '&' to create a reference that can be used for another variable.
+        - Such as &mikesScore = myScore;
+    - You can't assign a reference to another variable if it has already been assigned to one.
+    
 ## TroubleShooting
