@@ -161,5 +161,7 @@ Integrated Development Environment (IDE) for C++ :
     - Passing by value copies the variable, whereas passing by reference is efficient as copies are not made; access to the variable is granted.
 - **Page 173**: Returning a reference
     - Never return a reference to a local variable from a function outside of main, as the variable does not exist outside the scope of the function (therefore it will not be reached by main()).
+- **Page 183**: Making changes to the game board
+    - Remove 'const' and call by value to make a copy of the game board that is modifiable. The variable itself is safeguarded from change.
     
 ## TroubleShooting
