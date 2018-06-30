@@ -164,4 +164,6 @@ Integrated Development Environment (IDE) for C++ :
 - **Page 183**: Making changes to the game board
     - Remove 'const' and call by value to make a copy of the game board that is modifiable. The variable itself is safeguarded from change.
     
+### Chapter 7 - Pointers: Tic-Tac-Toe 2.0
+    
 ## TroubleShooting
