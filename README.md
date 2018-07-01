@@ -189,7 +189,7 @@ Integrated Development Environment (IDE) for C++ :
     - Can't point to a constant variable.
 - **Page 199**: Pointer to a Constant
     - A pointer that can change the value of the object that it is assigned to.
-    - Use *const* keyword *before* the type declaration such as: __ const int* pScore;__
+    - Use *const* keyword *before* the type declaration such as: __const int* pScore;__
     - Constant pointer **can not** change the value to which it points such as: pScore += 500; is illegal.
     - Constant pointer **can** change the address of the object to which it points, such as: pScore = &anotherScore
 - **Page 200**: Constant Pointer to a Constant
