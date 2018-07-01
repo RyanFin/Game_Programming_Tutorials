@@ -165,5 +165,13 @@ Integrated Development Environment (IDE) for C++ :
     - Remove 'const' and call by value to make a copy of the game board that is modifiable. The variable itself is safeguarded from change.
     
 ### Chapter 7 - Pointers: Tic-Tac-Toe 2.0
+- **Page 193**: Creating and using Pointers
+    - Declare, initialise and assign pointers to values
+        - Initialise a pointer with: *int* pScore = 0;*
+        - Assign a pointer to the address of a variable: *pScore = &score;* 
+            - Assigns the pointer *pScore* to the memory address of the variable *score*.
+    - Retrieve values from a pointer by dereferencing it with *.
+    - Modify a value using a pointer by using the dereferencer such as: *pScore += 500;
+        
     
 ## TroubleShooting
