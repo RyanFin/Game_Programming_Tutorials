@@ -43,6 +43,6 @@ int main(){
 //	cout << "pStr is: " << pStr <<endl;
 	cout << "(*pStr).size() is: " << (*pStr).size() << endl;
 	cout << "pStr->size() is: " << pStr->size() << "\n\n";
-	
+
 	return 0;
 }

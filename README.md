@@ -152,7 +152,7 @@ Integrated Development Environment (IDE) for C++ :
 ### Chapter 6 - Tic-Tac-Toe
 - **Page 162**: References
     - A reference provides an alias for a variable. 
-    - Use '&' to create a reference that can be used for another variable.
+    - Use the *reference operator* '&' to create a reference that can be used for another variable.
         - Such as &mikesScore = myScore;
     - You can't assign a reference to another variable if it has already been assigned to one.
 - **Page 166-167**: *Passing by Value* Versus *Passing by Reference*
@@ -167,11 +167,20 @@ Integrated Development Environment (IDE) for C++ :
 ### Chapter 7 - Pointers: Tic-Tac-Toe 2.0
 - **Page 193**: Creating and using Pointers
     - Declare, initialise and assign pointers to values
-        - Initialise a pointer with: *int* pScore = 0;*
-        - Assign a pointer to the address of a variable: *pScore = &score;* 
+        - Declare a pointer with the *null pointer* by setting it to zero: *int* pScore = 0;*. Stating the type of address it can store e.g. string int, char etc. 
+        - Assign a pointer to the address of a variable using the *address of*: *pScore = &score;* 
             - Assigns the pointer *pScore* to the memory address of the variable *score*.
-    - Retrieve values from a pointer by dereferencing it with *.
+    - Retrieve values from a pointer by dereferencing it with *, such as *pScore, which refers to the value stored at the memory address that pScore points to.
     - Modify a value using a pointer by using the dereferencer such as: *pScore += 500;
+- **Page 195**: Dereference
+    - **pScore* means 'the object to which *pScore* points'.
+    - Never dereference a null pointer.
+    - Unlike references, pointers can change what variables they are assigned to during the duration of a program.
+        - Simply reassign a pointer using this syntax = pScore = &newScore;
+- **Page 196**: Accessing the member function of objects using pointers
+    - Use the dereference operator (*) and call the the member functions in the same two ways as an iterator:
+        1) (*pStr).size()
+        2) pStr->size() **No dereference operator required**
         
     
 ## TroubleShooting
