@@ -183,13 +183,13 @@ Integrated Development Environment (IDE) for C++ :
         2) pStr->size() **No dereference operator required**
 - **Page 198**: Constant Pointer
     - A pointer that can only point to the object which it was initialised to point.
-    - Use *const* keyword *after* the type declaration such as: int* *const* pScore = &score;. Must be initialised **fully** at the start with the address.
+    - Use *const* keyword *after* the type declaration such as: **int* *const* pScore = &score;**. Must be initialised **fully** at the start with the address.
     - Constant pointer **can** change the value to which it points such as: pScore += 500;
     - Constant pointer **can not** change the address of the object to which it points, such as: pScore = &anotherScore is illegal.
     - Can't point to a constant variable.
 - **Page 199**: Pointer to a Constant
     - A pointer that can change the value of the object that it is assigned to.
-    - Use *const* keyword *before* the type declaration such as: ***const* int* pScore;**
+    - Use *const* keyword *before* the type declaration such as: ** const int* pScore;**
     - Constant pointer **can not** change the value to which it points such as: pScore += 500; is illegal.
     - Constant pointer **can** change the address of the object to which it points, such as: pScore = &anotherScore
 - **Page 200**: Constant Pointer to a Constant
