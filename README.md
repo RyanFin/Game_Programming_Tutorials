@@ -197,6 +197,13 @@ Integrated Development Environment (IDE) for C++ :
     - Declaration: **const int* const pBONUS = &BONUS;**
     - Constant pointer **can not** change the value to which it points such as: pScore += 500; is illegal.
     - Constant pointer **can not** change the address of the object to which it points, such as: pScore = &anotherScore is illegal. 
+- **Page 207**: Dangling Pointers:
+    - A pointer to a *non-existent* object is known as a *dangling pointer*. An invalid memory address such as this, may be caused by deleting an object to which a pointer pointed. 
+    - Derefrencing such pointers can lead to disasterous results in the program.
+    - To overcome this potential problem in your software code, ensure that you do not return a pointer to a local variable.
+- **Page 211**: Relationship between Arrays and Pointers
+    - Array names are essentially *constant pointers* (pointers where you can modify the value but **NOT** the address of where the pointer points).
+    - By using the *dereference operator* (*) with the array name such as *myArray will allow you to automatically display the element at position 0 in the array. Increment this value such as *(myArray + 1), to output the second item in the array container (at position 1); therefore equivalent to myArray[1].
     
         
     
