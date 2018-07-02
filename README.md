@@ -204,7 +204,18 @@ Integrated Development Environment (IDE) for C++ :
 - **Page 211**: Relationship between Arrays and Pointers
     - Array names are essentially *constant pointers* (pointers where you can modify the value but **NOT** the address of where the pointer points).
     - By using the *dereference operator* (*) with the array name such as *myArray will allow you to automatically display the element at position 0 in the array. Increment this value such as *(myArray + 1), to output the second item in the array container (at position 1); therefore equivalent to myArray[1].
-    
-        
+
+### Chapter 8 - Classes: Critter Caretaker 
+- **Page 220**: Class Structure for object creation (analogous to a blueprint)
+    - A C++ object is composed of the following:
+        - Class definition
+        - Data member / instance variables
+        - Data functions / operations
+            - Member function prototype
+            - Member function definition 
+                - Occurs outside of the class definition 
+                - Use the prefix *class_name::myFunction()* (*::* is the *scope resolution operator*).
+- **page 223**: Instantiatig Objects from Classes
+    - Simply use the syntax: *ClassName myObject;*
     
 ## TroubleShooting
