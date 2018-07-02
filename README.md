@@ -209,13 +209,24 @@ Integrated Development Environment (IDE) for C++ :
 - **Page 220**: Class Structure for object creation (analogous to a blueprint)
     - A C++ object is composed of the following:
         - Class definition
+        - Constructor prototype
+            - Accepts default values.
+        - Constructor definition
+            - Occurs outside of the class definition .
+            - Use the prefix *class_name::class_name()* (*::* is the *scope resolution operator*).
         - Data member / instance variables
         - Data functions / operations
             - Member function prototype
             - Member function definition 
-                - Occurs outside of the class definition 
+                - Occurs outside of the class definition.
                 - Use the prefix *class_name::myFunction()* (*::* is the *scope resolution operator*).
-- **page 223**: Instantiatig Objects from Classes
+- **Page 223**: Instantiating Objects from Classes
     - Simply use the syntax: *ClassName myObject;*
+    
+- **Page 224**: Using Constructors
+    - A constructor saves a lot of time when instantiating new objects from a class template, as it provides objects with the values upon creation, rather than manually setting individual instance variables.
+    - It is illegal to use a return type for a constructor definition.
+
+    
     
 ## TroubleShooting
