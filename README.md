@@ -226,6 +226,8 @@ Integrated Development Environment (IDE) for C++ :
 - **Page 224**: Using Constructors
     - A constructor saves a lot of time when instantiating new objects from a class template, as it provides objects with the values upon creation, rather than manually setting individual instance variables.
     - It is illegal to use a return type for a constructor definition.
+- **Page 226**: Member Initializers
+    - Use these to set variables in the constructor as a quicker way such as - Critter::Critter(int hunger, int boredom): m_Hunger(hunger){}; || Same as: Critter::Critter(int hunger){ m_Hunger = hunger;};
 
     
     
