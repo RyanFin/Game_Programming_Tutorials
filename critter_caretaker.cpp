@@ -10,12 +10,15 @@ class Critter{
 		void talk();
 		void eat(int food = 0);
 		void play(int fun = 0);
+		
+		// Add getters
+		int getHunger() const;
+		int getBoredom() const; 
 	
 	private:
 		int m_Hunger, m_Boredom;
-		
-		int getMood() const;
 		void passTime(int time = 1);
+		int getMood() const;
 	
 };
 
@@ -27,6 +30,14 @@ Critter::Critter(int hunger, int boredom){
 
 inline int Critter::getMood() const{
 	return (m_Hunger + m_Boredom);
+}
+
+int Critter::getHunger() const{
+	return m_Hunger;
+}
+
+int Critter::getBoredom() const{
+	return m_Boredom;
 }
 
 void Critter::passTime(int time){
@@ -80,7 +91,8 @@ int main(){
 		cout << "1 - Listen to your critter.\n";
 		cout << "2 - Feed your critter.\n";
 		cout << "3 - Play with your critter.\n";
-		// Add additional option
+		// Add additional option to view exact values of critter hunger and boredom levels  
+		cout << "4 - View Critter Stats.\n";
 		
 		
 		cout << "Choice: " << endl;
@@ -98,6 +110,12 @@ int main(){
 				break;
 			case 3:
 				crit.play();
+				break;
+			case 4:
+				cout << "\t\t\t ****Critter Stats****\n";
+				cout << "\nHunger: " << crit.getHunger();
+				cout << "\nBoredom: " << crit.getBoredom();
+//>> "\nCritter Boredom: " << crit.getBoredom();
 				break;
 			default:
 				cout << "\nSorry, but " << choice << "is not a valid choice.\n";
