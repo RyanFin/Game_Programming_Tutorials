@@ -27,7 +27,7 @@ class Farm{
 		Farm(int spaces = 1){
 			m_Critters.reserve(spaces);
 		}
-		void add(const Critter& aCritter){ // pointer to a constant. CANT modify value of critter pointer
+		void add(const Critter& aCritter){ // Constant reference. CANNOT refer to more than one variable at once (no alter-ego)
 			m_Critters.push_back(aCritter); // add a critter to the vector (arraylist)
 		}
 		
@@ -60,6 +60,18 @@ int main(){
 	
 	cout << "Calling Roll Call....\n";
 	myFarm.rollCall();
+	
+	// References vs Constant References
+	cout << "\t\t\t****References****\n\n";
+	Critter perry("Perry");
+	Critter& agentP = perry; // Reference functions as an alternate name (alter-ego!)
+	cout << agentP.getName() << endl;
+
+	
+	Critter spot("Spot");
+	const Critter& constRef = spot;
+//	constRef = perry; // invalid as a constant reference CANNOT refer to another variable
+	cout << constRef.getName() << endl;
 	
 	
 	
