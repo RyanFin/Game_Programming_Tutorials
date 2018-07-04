@@ -27,6 +27,7 @@ class Farm{
 		Farm(int spaces = 1){
 			m_Critters.reserve(spaces);
 		}
+		// Use of references to efficiently access the direct critter object passed as a parameter. No copies are made!
 		void add(const Critter& aCritter){ // Constant reference. CANNOT refer to more than one variable at once (no alter-ego)
 			m_Critters.push_back(aCritter); // add a critter to the vector (arraylist)
 		}
