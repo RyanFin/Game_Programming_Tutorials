@@ -228,12 +228,22 @@ Integrated Development Environment (IDE) for C++ :
     - It is illegal to use a return type for a constructor definition.
 - **Page 226**: Member Initializers
     - Use these to set variables in the constructor as a quicker way such as - Critter::Critter(int hunger, int boredom): m_Hunger(hunger){}; || Same as: Critter::Critter(int hunger){ m_Hunger = hunger;};
-    
+
+### Chapter 9 - Advanced Classes and Dynamic Memory: Game Lobby
 - **Page 247**: Aggregation Relationship
     - Combination of objects, such that one is part of another.
     - An aggregation is a *has-a* relationship, for example, a critter *has-a* name, or a *DragRacer* class that has an *engine* data member (instance variable) that is an *Engine* object. Or a *Zoo* class that is a collection of *Animal* objects.
     - vector<*datatype*> m_Critters. (Create a vector / arraylist called m_Critters)
         - m_Critters.reserve(int spaces);. *Reserve* function is used to allocate space in memory for the amount of objects specified as *spaces*.
+- **Page 251**: Friend Functions
+    - Can access any member of a class of which is a friend. Create a friend function by listing the function as a *function prototype* within the specified class with the *friend* keyword. Repeat the function prototype outside of the class as a global function *without* the friend function before providing the concrete function definition.
+    - Friend functions can access any data member / instance variable of the class even though it is not an official member function of the class; therefore, the function may access private data members of the class.
+- **Page 251**: Overloading Operators
+    - Operator overloading allows developers to give meaning to built-in operators and customise them with new types that you define.
+    - Use the synatax: *operatorX*, where *X* is the operator you wish to overload. For example: ostream *operator<<*(ostream& os);
+    
+    
+        
 
     
     
