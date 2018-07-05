@@ -245,6 +245,23 @@ Integrated Development Environment (IDE) for C++ :
     - Understand the differences between these two types of memory data structures.
         - **Stack**: When declaring a variable, C++ will allocate the necessary memory for it. When the function that the variable was created in has ended, C++ freed the memory.
         - **Heap** (free store): Memory that persists independently of the function in a program. Programmer must manually free this memory to improve the efficiency of the application. Allows developers to use only the amount of memory you need at any given time. A game that consists of 100 enemies can be allocated the required memory at the start of the game and manually freed at the end. A heap allows developers to gain access to an object in a function even *after* the function ends (without having to return a copy of the object).
+- **Page 254**: The *new* operator
+    - The *new* operator dynamically allocates memory on the heap and returns its address. 
+    - Use the *new* operator followed by the data type of the value that you wish to reserve space for. 
+    - For example: int* pHeap = new int;
+        - The *new int* part of the statement allocates enough memory on the heap for a single integer and returns the address of that chunk of memory on the heap.
+        - The *int* pHeap* part of the statement creates a pointer called *pHeap* which points to the memory address location returned on the heap (returned by *new int*).
+        - The pointer *pHeap* can now be used to manipulate the chunk of memory that has been reserved for a single interger variable.
+        - *pHeap* points to a piece of memory on the heap, not the stack.
+    - Memory can be initialised on the heap at the same time you allocate it by placing a value in parenthesis after the datatype declaration, such as: *int* pHeap = new int(10);* which allocates a chunk of memory on the heap for an int variable and assigns the value 10 to it.
+    - Functions that return a pointer to memory addresses are very efficient, as no copies of the object are made. They can be accessed and modified by other functions (such as main()).
+- **Page 255**: The *delete* operator
+    - Once finished using memory allocated with the *new* keyword, the *delete* keyword must be used to free the data from the heap for future use.
+    - **IMPORTANT: EVERY new SHOULD HAVE A CORRESPONDING delete KEYWORD TO RELEASE THE MEMORY!**
+        - Write the *delete* statement at the same time as initialising the *new* keyword.
+        - After deleting, assign 0 to the variable to remove *dangling pointers*, and assign them to point to a new, valid chunk of memory.
+    
+        
     
     
         
