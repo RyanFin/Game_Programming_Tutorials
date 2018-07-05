@@ -41,13 +41,13 @@ int* intOnHeap(){
 }
 
 void leak1(){
-	int* drip1 = new int(30);
+	int* drip1 = new int(30); // no corresponding delete statement, memory will leak
 }
 
 void leak2(){
-	int* drip2 = new int(50);
-	drip2 = new int(100);
-	delete drip2;
+	int* drip2 = new int(50); // memory address assigned the value 50. Pointer 'drip2' points to this location in memory
+	drip2 = new int(100); // pointer points to a new address in memory and assigns it 100. The memory address with thew value '50' leaks as a result
+	delete drip2; // release the memory, creating a dangling pointer (drip2) assign drip2 = 0 to fix. No worries about it in terminating function
 }
 
 
