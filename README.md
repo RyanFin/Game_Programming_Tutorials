@@ -241,6 +241,10 @@ Integrated Development Environment (IDE) for C++ :
 - **Page 251**: Overloading Operators
     - Operator overloading allows developers to give meaning to built-in operators and customise them with new types that you define.
     - Use the synatax: *operatorX*, where *X* is the operator you wish to overload. For example: ostream *operator<<*(ostream& os);
+- **Page 252**: Dynamically Allocating Memory
+    - Understand the differences between these two types of memory data structures.
+        - **Stack**: When declaring a variable, C++ will allocate the necessary memory for it. When the function that the variable was created in has ended, C++ freed the memory.
+        - **Heap** (free store): Memory that persists independently of the function in a program. Programmer must manually free this memory to improve the efficiency of the application. Allows developers to use only the amount of memory you need at any given time. A game that consists of 100 enemies can be allocated the required memory at the start of the game and manually freed at the end. A heap allows developers to gain access to an object in a function even *after* the function ends (without having to return a copy of the object).
     
     
         
