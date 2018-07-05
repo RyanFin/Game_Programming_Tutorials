@@ -50,6 +50,3 @@ void leak2(){
 	delete drip2; // release the memory, creating a dangling pointer (drip2) assign drip2 = 0 to fix. No worries about it in terminating function
 }
 
-
-
-
