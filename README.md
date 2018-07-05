@@ -257,7 +257,7 @@ Integrated Development Environment (IDE) for C++ :
     - Functions that return a pointer to memory addresses are very efficient, as no copies of the object are made. They can be accessed and modified by other functions (such as main()).
 - **Page 255**: The *delete* operator
     - Once finished using memory allocated with the *new* keyword, the *delete* keyword must be used to free the data from the heap for future use.
-    - **IMPORTANT: EVERY new SHOULD HAVE A CORRESPONDING delete KEYWORD TO RELEASE THE MEMORY!**
+    - **IMPORTANT: EVERY 'new' SHOULD HAVE A CORRESPONDING 'delete' KEYWORD TO RELEASE THE MEMORY!**
         - Write the *delete* statement at the same time as initialising the *new* keyword.
         - After deleting, assign 0 to the variable to remove *dangling pointers*, and assign them to point to a new, valid chunk of memory.
     
