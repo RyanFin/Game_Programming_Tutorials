@@ -173,6 +173,7 @@ Integrated Development Environment (IDE) for C++ :
     - Retrieve values from a pointer by dereferencing it with *, such as *pScore, which refers to the value stored at the memory address that pScore points to.
     - Modify a value using a pointer by using the dereferencer such as: *pScore += 500;
 - **Page 195**: Dereference
+    - Used to retrieve the value from a pointer. 
     - **pScore* means 'the object to which *pScore* points'.
     - Never dereference a null pointer.
     - Unlike references, pointers can change what variables they are assigned to during the duration of a program.
