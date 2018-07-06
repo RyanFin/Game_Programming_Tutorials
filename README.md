@@ -267,6 +267,7 @@ Integrated Development Environment (IDE) for C++ :
     - When you have a class with data members / instance variables that point to memory on the heap, you should consider writing a copy constructor that allocates memory for a new object and creates a *deep* copy.
 
 ### Chapter 10 - Inheritance and Polymorphism: BlackJack
-    
+- **Page 282**: Base Class (Superclass) vs Derived Class (Subclass)
+    - Derived class inherits data members / instance variables and data functions / operations from the superclass.
     
 ## TroubleShooting
