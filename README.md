@@ -269,5 +269,7 @@ Integrated Development Environment (IDE) for C++ :
 ### Chapter 10 - Inheritance and Polymorphism: BlackJack
 - **Page 282**: Base Class (Superclass) vs Derived Class (Subclass)
     - Derived class inherits data members / instance variables and data functions / operations from the superclass.
+- **Page 286**: Using the *public* keyword
+    - *class Boss : public Enemy*. The *public* keyword is used to state that the public data members within the base class are passed to the derived class via inheritance.
     
 ## TroubleShooting
