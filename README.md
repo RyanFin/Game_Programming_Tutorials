@@ -260,12 +260,12 @@ Integrated Development Environment (IDE) for C++ :
     - **IMPORTANT: EVERY 'new' SHOULD HAVE A CORRESPONDING 'delete' KEYWORD TO RELEASE THE MEMORY!**
         - Write the *delete* statement at the same time as initialising the *new* keyword.
         - After deleting, assign 0 to the variable to remove *dangling pointers*, and assign them to point to a new, valid chunk of memory.
-    
-        
-    
-    
-        
+- **Page 264**: Copy Constructor
+    - Used to avoid a *shallow* copy when an object is *passed by value*. Essentially this means that the pointer and the copied object both point to the same address containing the string value; they both share references to the same chunks of memory, a change in one object will be reflected in another. When the object is destroyed the address containing the string object is also destroyed from the heap. Resulting in a dangling pointer!
+    - To fix this issue a *deep* copy must be made. Essentially this means that the copy constructor creates a new object pointing to *another* memory address which contains the same value.
+    - When you have a class with data members / instance variables that point to memory on the heap, you should consider writing a copy constructor that allocates memory for a new object and creates a *deep* copy.
 
+### Chapter 10 - Inheritance and Polymorphism: BlackJack
     
     
 ## TroubleShooting

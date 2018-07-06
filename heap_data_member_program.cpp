@@ -22,7 +22,7 @@ class Critter{
 		// Copy Constructor
 		Critter(const Critter& c){
 			cout << "Copy constructor called...\n";
-			m_pName = new string;
+			m_pName = new string; // points the pointer to a new address in memory with the same value!
 			*m_pName = c.getName();
 		}
 		
@@ -48,7 +48,7 @@ class Critter{
 		}
 		
 		private:
-			string* m_pName;
+			string* m_pName; // data member pointer points to string value in the heap
 	
 };
 
