@@ -229,6 +229,8 @@ Integrated Development Environment (IDE) for C++ :
     - It is illegal to use a return type for a constructor definition.
 - **Page 226**: Member Initializers
     - Use these to set variables in the constructor as a quicker way such as - Critter::Critter(int hunger, int boredom): m_Hunger(hunger){}; || Same as: Critter::Critter(int hunger){ m_Hunger = hunger;};
+- **Page 230**: Constant member functions
+    - A *constant member function* cannot modify a data member / instance variable of its class or call a non-constant member function of its class - used to protect variables from being modified and altered unintentionally; also makes your intentions clearer to other programmers.
 
 ### Chapter 9 - Advanced Classes and Dynamic Memory: Game Lobby
 - **Page 247**: Aggregation Relationship
