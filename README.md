@@ -281,6 +281,7 @@ Integrated Development Environment (IDE) for C++ :
     - Pointer: Enemy* pBadGuy = new Boss();
         - Structure of pointer declaration: <*Pointer Type*>* pointer_Name = new objectBeingPointedTo();
         - Where the Enemy class is the base class, and Boss is the derived class. The member function void taunt() const; will output results for the *pointer type*: this is *early binding*. Using the *virtual* keyword to create a member function: void virtual VTaunt() const; will result in an output that is called based on the *type* of object being pointed to, not fixed by pointer type: this is *late binding*.
+        - **If you have any virtual member functions in a class, you should make the destructor virtual, too!**
         
     
 ## TroubleShooting
