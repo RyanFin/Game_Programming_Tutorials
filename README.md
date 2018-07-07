@@ -271,5 +271,16 @@ Integrated Development Environment (IDE) for C++ :
     - Derived class inherits data members / instance variables and data functions / operations from the superclass.
 - **Page 286**: Using the *public* keyword
     - *class Boss : public Enemy*. The *public* keyword is used to state that the public data members within the base class are passed to the derived class via inheritance.
+- **Page 290**: Base Class Member Functions
+    - Extend the functionality of the member function in the base class by overriding the base class method. *Explicitly call* the superclass of the member function within the derived class equivalent of the same member function, and add more content.
+    - Example, within the derived class *Boss* 
+            - **void attack() const**{**Enemy::attack()**; cout << " And laughs heartily at you.\n"; // override with additional functionality!}
+- **Page 291**: Polymorphism
+    - A member function / operation that produces different results depending on the *type* of object for which it is being called.
+- **Page 294**: Virtual Member Functions 
+    - Pointer: Enemy* pBadGuy = new Boss();
+        - Structure of pointer declaration: <*Pointer Type*>* pointer_Name = new objectBeingPointedTo();
+        - Where the Enemy class is the base class, and Boss is the derived class. The member function void taunt() const; will output results for the *pointer type*: this is *early binding*. Using the *virtual* keyword to create a member function: void virtual VTaunt() const; will result in an output that is called based on the *type* of object being pointed to, not fixed by pointer type: this is *late binding*.
+        
     
 ## TroubleShooting
