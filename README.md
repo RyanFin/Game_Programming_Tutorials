@@ -282,6 +282,8 @@ Integrated Development Environment (IDE) for C++ :
         - Structure of pointer declaration: <*Pointer Type*>* pointer_Name = new objectBeingPointedTo();
         - Where the Enemy class is the base class, and Boss is the derived class. The member function void taunt() const; will output results for the *pointer type*: this is *early binding*. Using the *virtual* keyword to create a member function: void virtual VTaunt() const; will result in an output that is called based on the *type* of object being pointed to, not fixed by pointer type: this is *late binding*.
         - **If you have any virtual member functions in a class, you should make the destructor virtual, too!**
-        
-    
+- **Page 296**: Abstract Classes
+    - *Pure virtual functions* are virtual member functions of a class that end with an equal sign and a 0. Such as: *virtual void Greet() const = 0;*. They are used as a template for the derived class. Pure virtual functions are not defined in the base class. For example, subclasses will find it useful to use the greet class for custom uses, rather than define the concrete definition in the superclass: e.g. A lion roars and an orc grunts.
+    - When a class contains at least **one** pure virtual function, the base class is known as an *abstract class*.
+    - Abstract classes can be used as the base class for other functions, but it **cannot** be used to instantiate objects!
 ## TroubleShooting
