@@ -298,5 +298,9 @@ Integrated Development Environment (IDE) for C++ :
         - Implementation Files: Contains the implementation for header file functions. Can also include definitions for variables and static members in an implementation file. 
             - Syntax: *#include "Critter.h"*. By using this syntax, it is as though you have manually copied and pasted the code from the critter.h file.
     - Application Files: Contains the main function to execute code.
+- **Page 304**: Designing Games
+    - Map out *all* classes on paper.
+        - Include brief descriptions of each class in a table with the structure:  *Class*; *Base Class*; *Description*;
+        (Base class states the superclass for the current class).
     
 ## TroubleShooting
