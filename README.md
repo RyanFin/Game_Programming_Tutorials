@@ -303,6 +303,6 @@ Integrated Development Environment (IDE) for C++ :
         - Include brief descriptions of each class in a table with the structure:  *Class*; *Base Class*; *Description*;
         (Base class states the superclass for the current class).
     - Draw an inheritance hierarchy for all the classes involved in the project.
-    - List data members / instance variables and member functions / operations that you think the classes will have, along with a brief description of each (no need to rewrite the inherited data members).
+    - List data members / instance variables and member functions / operations that you think the classes will have, along with a brief description of each (no need to rewrite the inherited data members). Table format: Members (data members and member functions); description;
     
 ## TroubleShooting
