@@ -288,4 +288,15 @@ Integrated Development Environment (IDE) for C++ :
     - *Pure virtual functions* are virtual member functions of a class that end with an equal sign and a 0. Such as: *virtual void Greet() const = 0;*. They are used as a template for the derived class. Pure virtual functions are not defined in the base class. For example, subclasses will find it useful to use the greet class for custom uses, rather than define the concrete definition in the superclass: e.g. A lion roars and an orc grunts.
     - When a class contains at least **one** pure virtual function, the base class is known as an *abstract class*.
     - Abstract classes can be used as the base class for other functions, but it **cannot** be used to instantiate objects!
+- **Page 300**: Creating C++ Projects
+    - C++ code can be organised into projects with the following structure:
+    - **Class Files**: Both header and implementation files constitute a tidy wat of storing a single class.
+        - Header Files
+            - *Preprocessor directives* which begin with # such as: #ifndef CRITTER_H, #define CRITTER_H and #endif. Together they tell the C++ compiler not to include the Critter definition in your project if it has already been included.
+                - #ifndef: If CRITTER_H is not included in the list of directives, the program should skip all of the code that follows, up to an end marker.
+                - #define: Include the definition of the CRITTER_H class to the list of symbols.
+        - Implementation Files: Contains the implementation for header file functions. Can also include definitions for variables and static members in an implementation file. 
+            - Syntax: *#include "Critter.h"*. By using this syntax, it is as though you have manually copied and pasted the code from the critter.h file.
+    - Application Files: Contains the main function to execute code.
+    
 ## TroubleShooting
