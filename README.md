@@ -304,5 +304,7 @@ Integrated Development Environment (IDE) for C++ :
         (Base class states the superclass for the current class).
     - Draw an inheritance hierarchy for all the classes involved in the project.
     - List data members / instance variables and member functions / operations that you think the classes will have, along with a brief description of each (no need to rewrite the inherited data members). Table format: Members (data members and member functions); description;
+- **Page 317**: Type Casting
+    - *Type Casting* is used to convert one datatype into another one. One way to achieve this is by using the keyword *static_cast* to return a value with a new type from a value of another type. Specify the type you want between the < and > followed by parenthesis of the value from which you wish to get the new value. For example: *static_cast*<double>(5);
     
 ## TroubleShooting
