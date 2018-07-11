@@ -15,8 +15,8 @@ using namespace std;
 
 class Card{
 	public:
-		enum rank = {ACE = 1, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING};
-		enum suit = {CLUBS, DIAMONDS, HEARTS, SPADES};
+		enum rank  {ACE = 1, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING};
+		enum suit  {CLUBS, DIAMONDS, HEARTS, SPADES};
 	
 	// overloading << operator so can send Card object to standard output
 	friend ostream& operator<<(ostream& os, const Card& aCard);
@@ -169,8 +169,8 @@ class GenericPlayer : public Hand{
 		string m_Name;
 };
 
-GenericPlayer::GenericPlayer(const string& name = ""){
-	m_Name = name;
+GenericPlayer::GenericPlayer(const string& name): m_Name(name){
+	
 }
 
 GenericPlayer::~GenericPlayer(){
@@ -189,7 +189,7 @@ void GenericPlayer::bust() const{
 ---- Player Class ----
 **/
 
-class Player : GenericPlayer{ 
+class Player : public GenericPlayer{ 
 	public:
 		Player(const string& name = "");
 		
@@ -208,7 +208,7 @@ class Player : GenericPlayer{
 		void push() const;
 };
 
-Player::Player(const string& name = ""): GenericPlayer(name){
+Player::Player(const string& name): GenericPlayer(name){
 }	
 
 Player::~Player(){
@@ -223,15 +223,15 @@ bool Player::isHitting() const{
 }
 
 void Player::win() const{
-	cout << m_Name << "wins.\n";
+	cout << m_Name << " wins :)\n";
 }
 
 void Player::lose() const{
-	cout << m_Name << "loses.\n";
+	cout << m_Name << " loses.\n";
 }
 
 void Player::push() const{
-	cout << m_Name << "pushes (draws).\n";
+	cout << m_Name << " pushes (draws).\n";
 }
 
 /**
@@ -251,7 +251,7 @@ class House : public GenericPlayer{
 		
 };
 
-House::House(const string& name = "House"): GenericPlayer(name){
+House::House(const string& name): GenericPlayer(name){
 	
 }
 
@@ -259,7 +259,7 @@ House::~House(){
 	
 }
 
-House::isHitting() const{
+bool House::isHitting() const{
 	return (getTotal() <= 16);
 }
 
@@ -275,7 +275,7 @@ void House::flipFirstCard(){
 ---- Deck Class ----
 **/
 
-class Deck : public Hand{
+class Deck : public Hand {
 	public:
 		Deck();
 		
@@ -308,9 +308,10 @@ void Deck::populate(){
 	clear();
 	
 	// create standard deck 
-	for(int s = Card::CLUBS, s <= Card::SPADES, ++s){
+	for(int s = Card::CLUBS; s <= Card::SPADES; ++s){
 		for(int r = Card::ACE; r <= Card::KING; ++r){
-			add(new Card(static_cast<Card::rank>(r),static_cast<Card::rank>(s)));
+			add(new Card(static_cast<Card::rank>(r),
+				static_cast<Card::suit>(s)));
 		}	
 	}
 }
@@ -340,6 +341,164 @@ void Deck::AdditionalCards(GenericPlayer& aGenericPlayer){
 		}
 	}
 }
+
+/**
+---- Game Class ----
+**/
+
+class Game{
+	public:
+		Game(const vector<string>& names);
+		
+		~Game();
+		
+		// plays the game of blackjack
+		void play();
+		
+	private:
+		Deck m_Deck;
+		House m_House;
+		vector<Player> m_Players; 
+};
+
+Game::Game(const vector<string>& names){
+	// create a vector of players from a vector of names
+	vector<string>::const_iterator pName;
+	for(pName = names.begin(); pName != names.end(); ++pName){
+		m_Players.push_back(Player(*pName));
+	}
+	
+	srand(time(0)); // seed the random number generator
+	m_Deck.populate();
+	m_Deck.shuffle();
+}
+
+Game::~Game(){
+	
+}
+
+void Game::play(){
+	// deal initial 2 cards to everyone
+	vector<Player>::iterator pPlayer;
+	for(int i = 0; i < 2; ++i){
+		for(pPlayer = m_Players.begin(); pPlayer != m_Players.end(); ++pPlayer){
+			m_Deck.deal(*pPlayer);
+		}
+		m_Deck.deal(m_House);
+	}
+	
+	// hide house's first card
+	m_House.flipFirstCard();
+	
+	//display everyone's hand
+	for(pPlayer = m_Players.begin(); pPlayer != m_Players.end(); ++pPlayer){
+		cout << *pPlayer << endl;
+	}
+	cout << m_House << endl;
+	
+	// deal additional cards to players
+	for(pPlayer = m_Players.begin(); pPlayer != m_Players.end(); ++pPlayer){
+		m_Deck.AdditionalCards(*pPlayer);
+	}
+	
+	// reveal house's first card
+	m_House.flipFirstCard();
+	cout << m_House << endl;
+	
+	//deal additional cards to house
+	m_Deck.AdditionalCards(m_House);
+	
+	if(m_House.IsBusted()){
+		// everyone still playing wins
+		for(pPlayer = m_Players.begin(); pPlayer != m_Players.end(); ++pPlayer){
+			if(!(pPlayer->IsBusted())){
+				if(pPlayer->getTotal() > m_House.getTotal()){
+					pPlayer->win();
+				} else if(pPlayer->getTotal() < m_House.getTotal()){
+					pPlayer->lose();
+				} else{
+					pPlayer->push();
+				}
+			}
+		}
+		
+	}
+	
+	// remove everyone's cards
+	for(pPlayer = m_Players.begin(); pPlayer != m_Players.end(); ++pPlayer){
+		pPlayer->clear();
+	}
+	m_House.clear();
+		
+}
+
+int main(){
+	cout << "\t\tWelcome to BlackJack!\n\n";
+	
+	int numPlayers = 0;
+	
+	while(numPlayers < 1 || numPlayers > 7){
+		cout << "How many players? (1 - 7): ";
+		cin >> numPlayers;
+	}
+	
+	vector<string> names;
+	string name;
+	
+	for(int i = 0; i < numPlayers; ++i){
+		cout << "Enter player names: ";
+		cin >> name;
+		names.push_back(name);
+	}
+	
+	cout << endl;
+	
+	// the game loop
+	Game aGame(names);
+	char again = 'y';
+	while(again != 'n' && again != 'N'){
+		aGame.play();
+		cout << "\nDo you want to play again? (Y/N): ";
+		cin >> again;
+	}
+	
+	
+	return 0;
+}
+
+// overloads << operator so I can send Card object to the standard output
+ostream& operator<<(ostream& os, const Card& aCard){
+	const string RANKS[] = {"0", "A", "2","3","4","5","6","7","8","9","10","J","Q","K"};
+	const string SUITS[] = {"c","d","h","s"};
+	
+	if(aCard.m_IsFaceUp){
+		os << RANKS[aCard.m_Rank] << SUITS[aCard.m_Suit];
+	} else{
+		os << "XX";
+	}
+	return os;	
+}
+
+// overloads << operator so I can send GenericPlayer object to the standard output
+ostream& operator<<(ostream& os, const GenericPlayer& aGenericPlayer){
+	os << aGenericPlayer.m_Name << ":\t";
+	
+	vector<Card*>::const_iterator pCard;
+	if(!aGenericPlayer.m_Cards.empty()){
+		for(pCard = aGenericPlayer.m_Cards.begin(); pCard != aGenericPlayer.m_Cards.end(); ++pCard){
+			os << *(*pCard) << "\t";
+		}
+		if(aGenericPlayer.getTotal() != 0){
+			cout << "(" << aGenericPlayer.getTotal() << ")";
+	}
+	} else{
+			os << "<empty>";
+	}
+	
+	return os;
+	
+}
+
 
 
 
