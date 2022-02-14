@@ -52,8 +52,11 @@ int Card::getValue() const{
 		if(value > 10){
 			value = 10;
 		}
-		return value;
+		//return value; /// this!
 	}
+	return value;
+	/// correct scope please for 'return'
+	/// function none return int!
 }
 
 void Card::flip(){
